@@ -26,18 +26,22 @@ These instructions will help you get a copy of the project up and running on you
    MONGODB_DATABASE_URL=mongodb://localhost/your-database-name #in this case its evento
    JWT_TOKEN_KEY=your-secret-key
 
-### run the server
-- run npm start to run the server, it uses nodemon for reloading live updates from node file instead of running server again
+### Run Server
+
+Run npm start to run the server, it uses nodemon for reloading live updates from node file instead of running server again
 
 ### Features
 
-- User Management: CRUD operations for user accounts (Register, Login, Update, Delete).
-- Company Management: CRUD operations for company data.
-- Authentication: Basic JWT-based authentication for user routes.
-### API Endpoints
+User Management: CRUD operations for user accounts (Register, Login, Update, Delete).
+Company Management: CRUD operations for company data.
+Authentication: Basic JWT-based authentication for user routes.
+
+### API ENDPOINTS
  ## Auth Route
- - Once you register a user with register user there is an auth route to get user token to get used in each of the collection
+
+ Once you register a user with register user there is an auth route to get user token to get used in each of the collection
   # POST /api/users/auth autheticate user(requires email and password as body).
+
  ## User Routes:
 
   # POST /api/users/register: Register a new user(requires no authentication).
@@ -45,6 +49,7 @@ These instructions will help you get a copy of the project up and running on you
   # PUT /api/users/:id: Update the user's profile (requires authentication).
   # GET /api/users/: Get all users from the system(requires authentication).
   # DELETE /api/users/:id: Delete the user's account (requires authentication).
+
 ## Company Routes:
 
   # GET /api/companies: Get a list of all companies(requires authentication).
