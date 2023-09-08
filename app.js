@@ -8,8 +8,8 @@ const port = process.env.PORT;
 const companyRoutes = require("./routes/companies_routes");
 const userRoutes = require("./routes/users_routes");
 const dbConnection = require("./connection")
-
-app.post("/", (req, res, next) => {
+const auth = require("./middleware/auth")
+app.post("/", auth, (req, res, next) => {
   res.status(200).send("Welcome 🙌 ");
 });
 
