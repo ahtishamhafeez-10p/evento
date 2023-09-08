@@ -40,20 +40,21 @@ Authentication: Basic JWT-based authentication for user routes.
  ## Auth Route
 
  Once you register a user with register user there is an auth route to get user token to get used in each of the collection
-  # POST /api/users/auth autheticate user(requires email and password as body).
+  
+  1.POST /api/users/auth autheticate user(requires email and password as body).
 
  ## User Routes:
 
-  # POST /api/users/register: Register a new user(requires no authentication).
-  # GET /api/users/:id: Get the user's profile (requires authentication).
-  # PUT /api/users/:id: Update the user's profile (requires authentication).
-  # GET /api/users/: Get all users from the system(requires authentication).
-  # DELETE /api/users/:id: Delete the user's account (requires authentication).
+  1. POST /api/users/register: Register a new user(requires no authentication).
+  2. GET /api/users/:id: Get the user's profile (requires authentication).
+  3. PUT /api/users/:id: Update the user's profile (requires authentication).
+  4. GET /api/users/: Get all users from the system(requires authentication).
+  5. DELETE /api/users/:id: Delete the user's account (requires authentication).
 
 ## Company Routes:
 
-  # GET /api/companies: Get a list of all companies(requires authentication).
-  # GET /api/companies/:id: Get a specific company by ID(requires authentication).
-  # POST /api/companies: Create a new company (requires authentication).
-  # PUT /api/companies/:id: Update a specific company by ID (requires authentication).
-  # DELETE /api/companies/:id: Delete a specific company by ID (requires authentication).
+  1. GET /api/companies: Get a list of all companies(requires authentication).
+  2. GET /api/companies/:id: Get a specific company by ID(requires authentication).
+  3. POST /api/companies: Create a new company (requires authentication).
+  4. PUT /api/companies/:id: Update a specific company by ID (requires authentication).
+  5. DELETE /api/companies/:id: Delete a specific company by ID (requires authentication).
